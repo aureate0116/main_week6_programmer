@@ -1,0 +1,7 @@
+//bs漸層顏色 
+//水平
+@mixin gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
+
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+
+}

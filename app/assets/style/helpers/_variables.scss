@@ -48,7 +48,7 @@ $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 // scss-docs-end color-variables
 
-// scss-docs-start colors-map
+// scss-docs-start colors-map  
 $colors: (
   "blue":       $blue,
   "indigo":     $indigo,
@@ -66,18 +66,23 @@ $colors: (
 ) !default;
 // scss-docs-end colors-map
 
-// scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
+// scss-docs-start theme-color-variables  // 新增顏色
+$primary:       #62DB54 !default; // $blue !default;
+$secondary:     #09ACF5 !default; // $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+//新增
+$gray-t1: #C1C1C1 !default;
+$gray-t2: #2D2D2D !default;
+$gray-t3: #1C1C1C !default;
+
 // scss-docs-end theme-color-variables
 
-// scss-docs-start theme-colors-map
+// scss-docs-start theme-colors-map  // 輸出顏色 (class)
 $theme-colors: (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -86,7 +91,15 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  
+  //新增
+  "gray-t1" : $gray-t1,
+  "gray-t2" : $gray-t2,
+  "gray-t3" : $gray-t3,
+  "black"   : $black,
+  "white" : $white
+  
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -216,7 +229,7 @@ $escaped-characters: (
 $enable-caret:                true !default;
 $enable-rounded:              true !default;
 $enable-shadows:              false !default;
-$enable-gradients:            false !default;
+$enable-gradients:            false ;//false !default; //修改
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
 $enable-smooth-scroll:        true !default;
@@ -248,13 +261,15 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
-$spacers: (
+$spacers: (  // 修改
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,  //4px
+  2: $spacer * .5, //8px
+  3: $spacer,         //16px
+  4: $spacer * 1.25, // 20px
+  5: $spacer * 1.5, //24px
+  6: $spacer * 2, //32px
+  7: $spacer * 3, //48px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -286,7 +301,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default; //修改
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -416,7 +431,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:  "Noto Sans TC",'Microsoft JhengHei' ,system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;  // 修改
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -441,22 +456,25 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
-// scss-docs-end font-variables
 
-// scss-docs-start font-sizes
+$h1-font-size:                $font-size-base * 3 !default;  //48px // $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default; //32px
+$h3-font-size:                $font-size-base * 1.75 !default; //28px
+$h4-font-size:                $font-size-base * 1.5 !default; //24px
+$h5-font-size:                $font-size-base * 1.25 !default; //20px
+$h6-font-size:                $font-size-base !default; //16px
+// scss-docs-end font-variables  class="h1"  or <h1></h1>
+
+// scss-docs-start font-sizes  class="fs-1" 盡量從大到小  // 新增
 $font-sizes: (
-  1: $h1-font-size,
-  2: $h2-font-size,
-  3: $h3-font-size,
-  4: $h4-font-size,
-  5: $h5-font-size,
-  6: $h6-font-size
+  1: $h1-font-size, //48px
+  2: $h2-font-size, // 32px
+  3: $h3-font-size, //28px
+  4: $h4-font-size, //24px
+  5: $h5-font-size,  //20px
+  6: $font-size-base * 1.125,  //18px  
+  7: $h6-font-size //16px
+  
 ) !default;
 // scss-docs-end font-sizes
 
@@ -968,7 +986,7 @@ $navbar-dark-color:                 rgba($white, .55) !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;
 $navbar-dark-active-color:          $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;  // 待修改 navbar 漢堡選單圖示
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                rgba($black, .55) !default;

@@ -1,0 +1,37 @@
+/*放全站html標籤css設定*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+  /*font-family: 'Azeret Mono', "Noto Sans TC",'Microsoft JhengHei';*/
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+/*
+header{
+  
+}
+
+a{
+
+
+}
+
+h1{
+    
+}
+
+h2{
+
+}
+h3{
+    
+}*/
