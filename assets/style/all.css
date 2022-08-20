@@ -12885,59 +12885,6 @@ fieldset:disabled .btn {
 }
 
 /*custom */
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small, .small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, .mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /*放全站html標籤css設定*/
 *,
 *::before,
@@ -12947,13 +12894,36 @@ table {
 }
 
 body {
-  /*font-family: 'Azeret Mono', "Noto Sans TC",'Microsoft JhengHei';*/
+  color: #fff;
 }
 
 img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+
+h2, .h2 {
+  font-size: 1.75rem;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+  line-height: 35px;
+  font-weight: bold;
+}
+
+h4, .h4 {
+  font-size: 1.25rem;
+  line-height: 29px;
+  font-weight: bold;
+}
+
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 24px;
 }
 
 /*
@@ -12969,13 +12939,7 @@ a{
 h1{
     
 }
-
-h2{
-
-}
-h3{
-    
-}*/
+*/
 .fontAzeret {
   font-family: 'Azeret Mono';
 }
@@ -13015,11 +12979,100 @@ h1 img, .h1 img {
 
 .banner {
   color: white;
-  width: 1286px;
-  height: 534px;
-  background-image: url(../../images/bg_home.jpg);
+  background-image: url("../images/bg_home.jpg");
   background-size: cover;
-  padding: 66px 75px;
+  padding: 205px 0px;
+}
+
+.title {
+  width: 640px;
+  height: 261px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  line-height: 48px;
+}
+
+.title .square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.title .lt {
+  -webkit-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+}
+
+.title .lb {
+  -webkit-transform: translate(-50%, 50%) !important;
+      -ms-transform: translate(-50%, 50%) !important;
+          transform: translate(-50%, 50%) !important;
+}
+
+.title .rt {
+  -webkit-transform: translate(50%, -50%) !important;
+      -ms-transform: translate(50%, -50%) !important;
+          transform: translate(50%, -50%) !important;
+}
+
+.title .rb {
+  -webkit-transform: translate(50%, 50%) !important;
+      -ms-transform: translate(50%, 50%) !important;
+          transform: translate(50%, 50%) !important;
+}
+
+.title .gradient-font {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(to bottom, #62DB54, #09ACF5);
+}
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.bg-gray-t2 .row, .bg-gray-t3 .row {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.bottomLine {
+  width: 50px;
+  height: 3px;
+  background-color: #62DB54;
+}
+
+.borderStyle1 {
+  color: #C1C1C1;
+}
+
+.borderStyle1:hover {
+  border: 1px solid #62DB54;
+  background-color: #202020;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.borderStyle1:hover span {
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(to bottom, #62DB54, #09ACF5);
+}
+
+.stepNo {
+  line-height: 56px;
+  position: absolute;
+  top: -28px;
+  left: 40px;
 }
 
 /*# sourceMappingURL=all.css.map */
