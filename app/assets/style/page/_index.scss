@@ -1,9 +1,83 @@
 .banner{
     color:white;
-    width: 1286px;
-    height: 534px;
-    background-image: url(../../images/bg_home.jpg);
+    //width: 1286px;
+    //height: 534px;
+    background-image: url("../images/bg_home.jpg");
     background-size: cover;
-    padding: 66px 75px;
-   
+    padding: 205px 0px;
+}
+
+.title{
+    width: 640px;
+    height: 261px;
+    border: 1px solid #fff; 
+    margin: 0 auto;
+    line-height: 48px; // line-height:70px;
+
+    .square{
+        width: 10px;
+        height: 10px;
+        background-color: #fff;  
+        position: absolute;
+    }
+    .lt{transform: translate(-50%, -50%) !important;}
+    .lb{transform: translate(-50%, 50%) !important;}
+    .rt{transform: translate(50%, -50%) !important;}
+    .rb{transform: translate(50%, 50%) !important;}
+
+    .gradient-font{
+        color: transparent;
+        background-clip:text; 
+        @include gradient-y;
+    }
+    
+}
+
+//通用
+p{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.bg-gray-t2 .row, .bg-gray-t3 .row{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    // .col-md-3{  欄與欄之間的距離
+    //     margin-left: 12px;
+    //     margin-right: 12px;
+    // }
+    
+}
+
+.bottomLine{
+    width: 50px;
+    height: 3px;
+    background-color: $primary;
+}
+
+//section 2
+.borderStyle1{
+   // border: 1px solid $primary;
+   color:$gray-t1;
+   &:hover{
+    border: 1px solid $primary;
+    background-color: #202020;
+    border-radius: 12px;
+    color:#fff;
+    //icon gradient
+    span{
+        color: transparent;
+        background-clip:text; 
+        @include gradient-y;
+    }
+   }   
+}
+
+
+//section 3
+.stepNo{
+    line-height: 56px;
+    position: absolute;
+    top: -28px;  //56px/2=28px
+    left :40px;
 }

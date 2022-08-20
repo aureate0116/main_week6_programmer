@@ -6,8 +6,8 @@
   box-sizing: border-box;
 }
 
-body{
-  /*font-family: 'Azeret Mono', "Noto Sans TC",'Microsoft JhengHei';*/
+body{ 
+  color:#fff;
 }
 
 img{
@@ -15,6 +15,30 @@ img{
   height: auto;
   vertical-align: middle;
 }
+
+//依據BS重設h1~h5
+h2{
+  font-size: $h3-font-size; //28px
+  line-height: 40px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: $h4-font-size; //24px
+  line-height: 35px;
+  font-weight: bold;
+}
+h4{
+  font-size: $h5-font-size; //20px
+  line-height: 29px;
+  font-weight: bold;
+}
+
+h5{
+  font-size: $h6-font-size; //16px
+  line-height: 24px;
+}
+
 /*
 header{
   
@@ -28,10 +52,4 @@ a{
 h1{
     
 }
-
-h2{
-
-}
-h3{
-    
-}*/
+*/

@@ -1,7 +1,14 @@
 //bs漸層顏色 
-//水平
+//水平左到右
 @mixin gradient-x($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
 
     background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
 
+}
+
+//垂直上到下
+@mixin gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
+
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
+    
 }

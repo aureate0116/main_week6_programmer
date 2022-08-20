@@ -358,7 +358,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.5rem !default;  //24px
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -386,9 +386,9 @@ $border-color:                $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .25rem !default;
-$border-radius-sm:            .2rem !default;
-$border-radius-lg:            .3rem !default;
+$border-radius:               .25rem !default;  //4px
+$border-radius-sm:            .2rem !default;  //3.2px
+$border-radius-lg:            .3rem !default; //4.8px 
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 
