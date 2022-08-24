@@ -12,3 +12,15 @@
     background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent);
     
 }
+
+
+
+
+
+@mixin mobile {
+    @media (max-width:360px){
+        @content;
+    }
+}
+
+

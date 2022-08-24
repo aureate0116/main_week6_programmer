@@ -3,10 +3,6 @@
     font-family: 'Azeret Mono';
 }
 
-.container{
-    max-width: 1440px;
-}
-
 //navbar
 h1 img{
     width: 174px;
@@ -21,6 +17,19 @@ h1 img{
           margin-right: 6px;  
         }
     }
+
+    @include mobile(){
+        padding: 24px 12px;
+        h1 {
+            img {display: none; }
+            a{
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/logo2.svg);
+                background-size: cover;  
+            }
+        }
+    }
 }
 .gradient-x-border{
     width: 100%;
@@ -30,5 +39,11 @@ h1 img{
 
 .footer{
     color:#909090;
+    @include mobile(){
+        span{
+        font-size: 12px !important;
+        line-height: 14px;
+        }
+    }
 }
 

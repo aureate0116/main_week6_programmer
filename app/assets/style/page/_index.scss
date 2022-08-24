@@ -1,15 +1,17 @@
+//section 1
 .banner{
     color:white;
-    //width: 1286px;
-    //height: 534px;
     background-image: url("../images/bg_home.jpg");
     background-size: cover;
     padding: 205px 0px;
+    @include mobile(){
+        background-image: url("../images/bg_home_mobile.jpg"); 
+        padding: 80px 7px;
+    }
 }
 
 .title{
     width: 640px;
-    height: 261px;
     border: 1px solid #fff; 
     margin: 0 auto;
     line-height: 48px; // line-height:70px;
@@ -30,6 +32,31 @@
         background-clip:text; 
         @include gradient-y;
     }
+    @include mobile(){
+        width: 100%;
+        div{
+            font-size: 24px;
+            line-height: 35px;
+            &.mb-2{
+                margin: 0 !important;
+            }
+        }
+        p{
+            font-size: 14px !important;
+            line-height: 20px !important; 
+        }
+    }
+    
+}
+
+//mobile
+.col-sm-1{
+    @include mobile(){
+        background-color: #202020;
+        width: 93.3%;
+        margin: 24px 12px 0px 12px;
+        border-radius: 12px;
+    }
     
 }
 
@@ -37,16 +64,18 @@
 p{
     font-size: 18px;
     line-height: 26px;
+    font-weight: normal; // tbc
 }
 
-.bg-gray-t2 .row, .bg-gray-t3 .row{
+section{
     padding-top: 80px;
     padding-bottom: 80px;
-    // .col-md-3{  欄與欄之間的距離
-    //     margin-left: 12px;
-    //     margin-right: 12px;
-    // }
-    
+    @include mobile(){
+        padding-top:40px;
+        padding-bottom:40px;
+
+        
+    }
 }
 
 .bottomLine{
@@ -57,7 +86,8 @@ p{
 
 //section 2
 .borderStyle1{
-   // border: 1px solid $primary;
+   border: 1px solid transparent;  // 加透明框線 避免border 畫面跳動
+
    color:$gray-t1;
    &:hover{
     border: 1px solid $primary;
@@ -70,7 +100,17 @@ p{
         background-clip:text; 
         @include gradient-y;
     }
-   }   
+   }  
+   
+   @include mobile(){
+        color: #fff;
+        span{
+            color: transparent;
+            background-clip:text; 
+            @include gradient-y;
+            font-size: 48px !important;
+        }
+   }
 }
 
 
@@ -80,4 +120,315 @@ p{
     position: absolute;
     top: -28px;  //56px/2=28px
     left :40px;
+    @include mobile(){
+        font-size: 48px !important;
+        line-height: 56px;
+    }
+}
+.borderStyle2{
+    border:1px solid #fff;
+    border-radius: 12px;
+}
+
+//Section 4 //Swiper
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    //background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+//section 5
+//.card, 
+.hotCourse{
+    // card 使用的border
+    // border-radius: 24px;  
+    // .card-footer{
+    //     border-color:#fff;
+    // }
+    .col-xxl-3, .col-md-6{
+        border-radius: 24px;
+    }
+    img{
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+}
+
+.gradient-x-btn{
+    @include gradient-x;
+}
+.buttonStyle{
+   width: 172px;
+   height: 42px; 
+   line-height: 26px;
+}
+
+//section 7
+.bg1, .bg2, .bg3, .bg4{
+    padding: 215px 48px;
+    background-size: cover;
+    .bottomLine{
+        background-color: #fff;
+    }
+    .material-icons{
+        margin-bottom: 18px;
+    }
+    position: relative;
+    
+    .material-icon,p{color:$gray-t1;}
+    .bottomLine{color:#fff;}
+
+    &:hover{
+        .material-icons{color:$primary;
+        } 
+        p{color:#fff;}
+        .bottomLine{background-color: $primary; }
+        .overlay{ opacity: 0%;}
+    }
+
+    @include mobile(){
+        padding:42px 72px;
+        .bottomLine{
+            background-color: $primary;
+            margin: 0 auto;
+        }
+        .material-icons{
+            color:$primary;
+            font-size:28px !important;
+        }
+        text-align: center !important;
+    }
+
+}
+
+.bg1{background-image: url("../images/info01.jpg");}
+.bg2{background-image: url("../images/info02.jpg");}
+.bg3{background-image: url("../images/info03.jpg");}
+.bg4{background-image: url("../images/info04.jpg");}
+
+.overlay{
+    background-color: $gray-t3;
+    opacity: 90%;
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    left: 0px;
+    top:0px;
+    z-index: 0;
+} 
+
+.zIndex{
+    z-index: 1;
+    position: relative;
+}
+
+//section 6
+.p2{
+    line-height: 24px;
+}
+.p3{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.borderStyle3{
+    width: 32px;
+    height: 32px;
+    display: none;
+
+    &-tl{
+        border-top: 1px solid $primary;
+        border-left: 1px solid $primary;
+        border-top-left-radius: 12px;
+    }
+    &-t2{
+        border-top: 1px solid $primary;
+        border-right: 1px solid $primary;
+        border-top-right-radius: 12px; 
+    }
+    &-t3{
+        border-left: 1px solid $primary;
+        border-bottom: 1px solid $primary;
+        border-bottom-left-radius: 12px;
+    }
+    &-t4{
+        border-bottom: 1px solid $primary;
+        border-right: 1px solid $primary;
+        border-bottom-right-radius: 12px; 
+    }
+}
+
+.articleBlock:hover{
+    .borderStyle3{
+        display: block;
+    }
+}
+
+
+//section 8 學生分享
+.shareBlock {
+    background-image: url("../images/bg_share.jpg");
+    background-size: cover;
+    background-position: center;
+
+    .swiper-wrapper{
+        width: 100%;
+        height: 429px;
+        @include mobile(){
+            height: auto;
+        }
+    }
+
+    .swiper-slide{
+        border:none;
+    }
+
+    .swiperImg {
+        img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 24px; 
+        }
+        width: 525px;
+        //height: 429px;
+        position: absolute;
+        left:10px;
+        top:0;
+
+        &::after{
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 1px solid #7C7E77; 
+            border-radius: 24px;
+            position: absolute;
+            z-index: -1;
+            left: -10px;
+            top:10px;
+        }
+
+        @include mobile(){
+            width: 95%;
+            &::after{
+                left: -5px;
+                top:5px;
+            }
+            //position: relative;
+        }
+
+    }
+
+    .card{
+        width: 426px;
+        height: auto;
+        border-radius: 24px 24px 24px 0px;
+        bottom:0px;
+        right: 0px;
+        position: absolute;
+        color:#000;
+        text-align: left;
+        img{
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            position: absolute;
+            right:32px;
+            //bottom:150px;
+            bottom:100%;
+            transform: translateY(50%);
+        }
+
+        @include mobile(){
+            width: 100%;
+            img{
+                width: 80px;
+            }
+            padding: 24px 28px;
+            bottom: 0px;
+            margin-top: 280px;
+            position: relative;
+           
+        }
+        
+    }
+
+}
+
+
+ .p4{
+    line-height: 26px;
+ }
+
+
+//左右按鈕 + pagination
+
+.pagination{
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 10;
+    position: absolute;
+
+    .swiper-pagination{
+        width: auto;
+        position: unset;
+    }
+
+    .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        opacity: 1;
+        background:$primary;
+        &-active {
+            width: 16px;
+            border-radius: 8px;
+        }
+    }
+
+    //把原有的左右鍵隱藏
+    .swiper-button-next:after, .swiper-button-prev:after {
+        content: '';
+    }
+    .swiper-button-prev, .swiper-button-next{
+        position: unset;
+        margin-top: 0;
+    }
+    
+    @include mobile(){
+        position: initial;
+        transform: none;
+    }
+}
+
+
+
+//加入我們
+.joinUs {
+    border-radius: 24px;
+    .material-icons{
+        font-size:100px;
+    }
+    a.btn{
+       padding:8px 32px;
+       display: block;
+    }
 }
