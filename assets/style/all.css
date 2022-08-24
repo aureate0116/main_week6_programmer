@@ -12978,7 +12978,12 @@ h1 img, .h1 img {
     height: 24px;
     background-image: url(../images/logo2.svg);
     background-size: cover;
+    display: block;
   }
+}
+
+ul.navbar-nav .nav-item {
+  margin: 12px auto;
 }
 
 .gradient-x-border {
@@ -13014,8 +13019,14 @@ h1 img, .h1 img {
   }
 }
 
+@media (max-width: 720px) {
+  .banner {
+    padding: 40px;
+  }
+}
+
 .title {
-  width: 640px;
+  width: 44.4%;
   border: 1px solid #fff;
   margin: 0 auto;
   line-height: 48px;
@@ -13166,7 +13177,14 @@ section {
   border-radius: 12px;
 }
 
+@media (max-width: 360px) {
+  .borderStyle2 {
+    margin-bottom: 24px;
+  }
+}
+
 .swiper-slide {
+  width: 100%;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
@@ -13184,8 +13202,22 @@ section {
   align-items: center;
 }
 
-.hotCourse .col-xxl-3, .hotCourse .col-md-6 {
+@media (max-width: 360px) {
+  .swiper-slide {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
+  }
+}
+
+.hotCourse .bg-gray-t2 {
   border-radius: 24px;
+}
+
+@media (max-width: 360px) {
+  .hotCourse .bg-gray-t2 {
+    margin-bottom: 16px;
+  }
 }
 
 .hotCourse img {
@@ -13486,6 +13518,23 @@ section {
 .joinUs a.btn {
   padding: 8px 32px;
   display: block;
+}
+
+@media (max-width: 360px) {
+  .joinUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    width: 95%;
+    padding: 40px 24px;
+  }
+  .joinUs .card-body {
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 24px !important;
+  }
 }
 
 /*# sourceMappingURL=all.css.map */
