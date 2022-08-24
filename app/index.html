@@ -8,7 +8,7 @@ current: index
 <div class="bg-gray-t3">
   <section class="container banner">
 
-      <div class="title bg-gray-t3 fs-1 fw-bold py-7 position-relative text-center">
+      <div class="title bg-gray-t3 fs-1 fw-bold py-xxl-7 py-md-7 position-relative text-center">
         <div class="gradient-font mb-2">全台最豐富的程式家教</div>
         <div class="mb-5">在實踐中化理想為現實</div>
         <p class="fs-6">全台最專業師資｜到府程式家教｜客製化課程</p>
@@ -57,29 +57,37 @@ current: index
         <div class="bottomLine mx-auto"></div>
       </div>
 
-      <div class="row "> <!--待確認 gutters gx-xxl-5  gap-5用法-->
-        <div class="col-xxl-3 col-md-6 p-7 borderStyle2 position-relative"> <!--待確認 mb-sm-5 用法-->
+      <div class="row">
+        <div class="col-xxl-3 col-md-6 "> 
+          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-sm-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">01</span>
           <h3 class="mb-3">預約</h3>
           <p>線上預約指定課程與老師<br/>由老師安排專屬課程</p>
+          </div>
         </div>
         
-        <div class="col-xxl-3 col-md-6 p-7  gx-xxl-2 borderStyle2 position-relative">
+        <div class="col-xxl-3 col-md-6">
+          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-sm-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">02</span>
           <h3 class="mb-3">付款</h3>
           <p>支援各種支付方式<br/>提供12期分期付款</p>
+          </div>
         </div>
 
-        <div class="col-xxl-3 col-md-6 p-7  borderStyle2 position-relative">
+        <div class="col-xxl-3 col-md-6 ">
+          <div class="borderStyle2 position-relative p-7 mb-md-5  mb-sm-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">03</span>
           <h3 class="mb-3">上課</h3>
           <p>地點由您指定<br/>密集性一對一教學</p>
+          </div>
         </div>
 
-        <div class="col-xxl-3 col-md-6 p-7  borderStyle2 position-relative">
+        <div class="col-xxl-3 col-md-6 ">
+          <div class="borderStyle2 position-relative p-7  mb-md-5  mb-sm-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">04</span>
           <h3 class="mb-3">提供滿意度</h3>
           <p>提供課程滿意度及回饋<br/>讓我們持續成長與進步</p>
+        </div>
         </div>
       </div>
   </section>
@@ -94,19 +102,21 @@ current: index
     </div>
 
     <!--swiper-->
-    <div class="row swiper mySwiper">
+    <div class="row">
+      <div class="swiper mySwiper">
       <ul class="swiper-wrapper">
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">JavaScript</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">HTML/CSS</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">SQL</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">Java</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">SQL</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">Bash/Shell</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">Python</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">Python</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">PHP</li>
-        <li class="swiper-slide px-xxl-6 py-xxl-5 p-3">C++</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">JavaScript</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">HTML/CSS</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">SQL</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">Java</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">SQL</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">Bash/Shell</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-33">Python</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-33">Python</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">PHP</li>
+        <li class="swiper-slide px-xxl-6 py-xxl-5 p-xxl-3">C++</li>
       </ul>
+      </div>
     </div>
   </section>
 </div>
@@ -199,26 +209,29 @@ current: index
 
     <div class="row hotCourse mb-7">
       <!--block 1-->
-      <div class="col-xxl-3 col-md-6 bg-gray-t2 pt-5 pb-3 px-0">
-        <div class="text-center">
-          <img src="./assets/images/teacher01.jpg" alt="Belinda">
-          <p class="fs-7">Belinda</p>
-        </div>
-        
-        <div class="px-5">
-        <h4 class="mb-1 pb-6">基礎前端 - HTML</h4>
-        <h5 class="text-primary mt-1">前端語言</h5>
-        <p class="mb-6 fs-7">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
-        </div>
+      <div class="col-xxl-3 col-md-6 ">
+        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
+          <div class="text-center">
+            <img src="./assets/images/teacher01.jpg" alt="Belinda">
+            <p class="fs-7">Belinda</p>
+          </div>
+          
+          <div class="px-5">
+          <h4 class="mb-xxl-1 pb-xxl-6">基礎前端 - HTML</h4>
+          <h5 class="text-primary mt-xxl-1">前端語言</h5>
+          <p class="mb-6 fs-7">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
+          </div>
 
-        <div class="text-center border-top px-0 pt-3">
-          <span class="fs-7 me-2">50分鐘</span>
-          <span class="fontAzeret fs-2">NT$1600</span>
+          <div class="text-center border-top px-0 pt-3">
+            <span class="fs-7 me-2">50分鐘</span>
+            <span class="fontAzeret fs-2">NT$1600</span>
+          </div>
         </div>
       </div>
 
       <!--block 2-->
-      <div class="col-xxl-3 col-md-6 bg-gray-t2 pt-5 pb-3 px-0 ">
+      <div class="col-xxl-3 col-md-6">
+        <div class=" bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
         <div class="text-center">
           <img src="./assets/images/teacher02.jpg" alt="Guava">
           <p class="fs-7">Guava</p>
@@ -235,9 +248,11 @@ current: index
           <span class="fontAzeret fs-2">NT$2200</span>
         </div>
       </div>
+      </div>
 
       <!--block 3-->
-      <div class="col-xxl-3 col-md-6 bg-gray-t2 pt-5 pb-3 px-0 ">
+      <div class="col-xxl-3 col-md-6 ">
+        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
         <div class="text-center">
           <img src="./assets/images/teacher03.jpg" alt="Joe">
           <p class="fs-7">Joe</p>
@@ -254,9 +269,11 @@ current: index
           <span class="fontAzeret fs-2">NT$1800</span>
         </div>
       </div>
+      </div>
 
       <!--block 4-->
-      <div class="col-xxl-3 col-md-6 bg-gray-t2 pt-5 pb-3 px-0 ">
+      <div class="col-xxl-3 col-md-6 ">
+        <div class=" bg-gray-t2 pt-5 pb-3 mb-md-5 mb-sm-5">
         <div class="text-center">
           <img src="./assets/images/teacher04.jpg" alt="Lina">
           <p class="fs-7">Lina</p>
@@ -272,6 +289,7 @@ current: index
           <span class="fs-7 me-2">50分鐘</span>
           <span class="fontAzeret fs-2">NT$1100</span>
         </div>
+      </div>
       </div>
     </div>
 
@@ -337,8 +355,9 @@ current: index
     </div>
     <div class="row"> 
       <!--article 1-->
-      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6 position-relative articleBlock">
-        
+      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6 ">
+        <div class="position-relative articleBlock">
+
         <div class="borderStyle3 borderStyle3-tl position-absolute top-0 start-0"></div>
 
         <div class="borderStyle3 borderStyle3-t2 position-absolute top-0 end-0"></div>
@@ -347,15 +366,18 @@ current: index
 
         <div class="borderStyle3 borderStyle3-t4 position-absolute bottom-0 end-0"></div>
 
+      
         <img src="./assets/images/article01.jpg" alt="">
         <p class="mt-3">2022 前端開發者學習地圖</p>
         <p class="mb-3 p2 fs-7">轉職為前端的這條職業路上該如何發展？本篇為前端開發者提供學習地圖參考</p>
         <p class="mb-xxl-3 mb-md-3  p3 fontAzeret text-primary d-flex justify-content-end"><a href="#">MORE</a></p>
+        
+        </div>
       </div>
       
       <!--article 2-->
-      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6  position-relative articleBlock">
-        
+      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6  ">
+        <div class="position-relative articleBlock">
         <div class="borderStyle3 borderStyle3-tl position-absolute top-0 start-0"></div>
         <div class="borderStyle3 borderStyle3-t2 position-absolute top-0 end-0"></div>
         <div class="borderStyle3 borderStyle3-t3 position-absolute bottom-0 start-0"></div>
@@ -366,10 +388,11 @@ current: index
 
         <p class="mb-xxl-3 mb-md-3 p3 fontAzeret text-primary d-flex justify-content-end"><a href="#">MORE</a></p>
       </div>
+      </div>
       
       <!--article 3-->
-      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6 position-relative articleBlock">
-        
+      <div class="col-xxl-4 col-md-4 p-xxl-6 p-md-6 ">
+        <div class="position-relative articleBlock">
         <div class="borderStyle3 borderStyle3-tl position-absolute top-0 start-0"></div>
 
         <div class="borderStyle3 borderStyle3-t2 position-absolute top-0 end-0"></div>
@@ -383,6 +406,7 @@ current: index
         <p class="mb-3 p2 fs-7">這篇文章規劃了適合「前端工程師」的學習地圖，讓新進的學生了解如何選擇課程</p>
         <p class="mb-xxl-3 mb-md-3  p3 fontAzeret text-primary d-flex justify-content-end"><a href="#">MORE</a></p>
       </div>
+    </div>
     </div>
   </section>
 </div>
@@ -399,7 +423,7 @@ current: index
     <div class="row justify-content-center ">
       <div class="col-xxl-8 col-md-8">
         <!-- Slider main container -->
-        <div class="swiper position-relative">
+        <div class="swiper2 position-relative">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper ">
             <!-- Slides -->
@@ -471,16 +495,19 @@ current: index
   <section class="container">
     <!--加入我們 --->
     <div class="row">
-      <div class="col-9 bg-gray-t2 mx-auto joinUs justify-content-start align-items-center d-flex p-7">
-      
-          <span class="material-icons me-7">menu_book</span>
-          <div class="card-body">
-            <div class="card-title fs-3">加入我們成為導師</div>
-            <div>歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</div> 
-          </div>
-          <div>
-          <a role="button" class="btn btn-outline-light" href="#">立即預約</a>
-         </div>
+      <div class="col-xxl-9 col-md-9 mx-auto">
+        <div class="joinUs bg-gray-t2 d-flex justify-content-start align-items-center flex-md-column 
+        flex-sm-column  p-xxl-7 p-md-7">
+              <span class="material-icons me-xxl-7 text-gray-t1">menu_book</span>
+            <div class="card-body">
+              <div class="card-title fs-3">加入我們成為導師</div>
+              <div>歡迎各大程式大神加入我們，用知識在世界留下一點影響力。</div> 
+            </div>
+            <div>
+            <a role="button" class="btn btn-outline-light" href="#">立即預約</a>
+            </div>
+
+        </div>
       </div>
     </div>
 

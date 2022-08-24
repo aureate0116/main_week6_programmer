@@ -23,4 +23,11 @@
     }
 }
 
+@mixin pad{
+    @media (max-width:720px){
+        @content;
+    }
+}
+
+
 
