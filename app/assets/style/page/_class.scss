@@ -1,0 +1,61 @@
+.allClass{
+    ul{
+        margin:40px 0 48px 0;
+        @include mobile(){
+            margin-bottom: 24px;
+        }
+    }
+    .list-group-item{
+        border-radius: 8px ;
+        border: 1px solid #fff;
+        background-color: transparent;
+        a{
+            color:#fff;
+        }
+    }
+    .list-group-item.active{
+        a{color:$primary;}
+        border-color:$primary;
+    }
+    img{
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .card{
+        border-radius: 24px;
+    }
+    .card-body{
+        width: 50%;
+        margin-right: 88px;
+        p{
+            line-height: 24px;
+        }
+        @include mobile(){
+            width: 100%;
+            //margin:0px;
+        }
+    }
+    .card-footer{
+        width: 20%;
+        
+        p{
+            line-height: 24px;
+        }
+        .price{
+            //font-size: 32px;  .fs-2
+            line-height: 37px;
+        }
+    }
+
+
+    h2{
+        font-size: 24px;
+        line-height: 35px;
+    }
+}
+
+
+.gradient-x-btn-left{
+    @include gradient-x-left;
+}

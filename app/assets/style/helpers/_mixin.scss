@@ -6,6 +6,12 @@
 
 }
 
+@mixin gradient-x-left($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
+
+    background-image: linear-gradient(to left, $start-color $start-percent, $end-color $end-percent);
+
+}
+
 //垂直上到下
 @mixin gradient-y($start-color: $primary, $end-color: $secondary, $start-percent: null, $end-percent: null) {
 

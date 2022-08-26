@@ -457,6 +457,7 @@ $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
 
+
 $h1-font-size:                $font-size-base * 3 !default;  //48px // $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 2 !default; //32px
 $h3-font-size:                $font-size-base * 1.75 !default; //28px
@@ -1099,15 +1100,15 @@ $pagination-border-radius-lg:       $border-radius-lg !default;
 // Cards
 
 // scss-docs-start card-variables
-$card-spacer-y:                     $spacer !default;
-$card-spacer-x:                     $spacer !default;
-$card-title-spacer-y:               $spacer * .5 !default;
+$card-spacer-y:                     0; //$spacer !default;
+$card-spacer-x:                     0; //$spacer !default;
+$card-title-spacer-y:               0; //$spacer * .5 !default;
 $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-padding-y:                $card-spacer-y * .5 !default;
-$card-cap-padding-x:                $card-spacer-x !default;
+$card-cap-padding-y:                0; //$card-spacer-y * .5 !default;
+$card-cap-padding-x:                0; //$card-spacer-x !default;
 $card-cap-bg:                       rgba($black, .03) !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
