@@ -5439,15 +5439,15 @@ fieldset:disabled .btn {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 1rem 1rem;
+  padding: 0 0;
 }
 
 .card-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .card-subtitle {
-  margin-top: -0.25rem;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -5460,11 +5460,11 @@ fieldset:disabled .btn {
 }
 
 .card-link + .card-link {
-  margin-left: 1rem;
+  margin-left: 0;
 }
 
 .card-header {
-  padding: 0.5rem 1rem;
+  padding: 0 0;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -5475,7 +5475,7 @@ fieldset:disabled .btn {
 }
 
 .card-footer {
-  padding: 0.5rem 1rem;
+  padding: 0 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -5485,15 +5485,15 @@ fieldset:disabled .btn {
 }
 
 .card-header-tabs {
-  margin-right: -0.5rem;
-  margin-bottom: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   border-bottom: 0;
 }
 
 .card-header-pills {
-  margin-right: -0.5rem;
-  margin-left: -0.5rem;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .card-img-overlay {
@@ -13535,6 +13535,81 @@ section {
     padding: 0px !important;
     margin-bottom: 24px !important;
   }
+}
+
+.allClass ul {
+  margin: 40px 0 48px 0;
+}
+
+@media (max-width: 360px) {
+  .allClass ul {
+    margin-bottom: 24px;
+  }
+}
+
+.allClass .list-group-item {
+  border-radius: 8px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.allClass .list-group-item a {
+  color: #fff;
+}
+
+.allClass .list-group-item.active {
+  border-color: #62DB54;
+}
+
+.allClass .list-group-item.active a {
+  color: #62DB54;
+}
+
+.allClass img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.allClass .card {
+  border-radius: 24px;
+}
+
+.allClass .card-body {
+  width: 50%;
+  margin-right: 88px;
+}
+
+.allClass .card-body p {
+  line-height: 24px;
+}
+
+@media (max-width: 360px) {
+  .allClass .card-body {
+    width: 100%;
+  }
+}
+
+.allClass .card-footer {
+  width: 20%;
+}
+
+.allClass .card-footer p {
+  line-height: 24px;
+}
+
+.allClass .card-footer .price {
+  line-height: 37px;
+}
+
+.allClass h2, .allClass .h2 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.gradient-x-btn-left {
+  background-image: -webkit-gradient(linear, right top, left top, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(right, #62DB54, #09ACF5);
+  background-image: linear-gradient(to left, #62DB54, #09ACF5);
 }
 
 /*# sourceMappingURL=all.css.map */
