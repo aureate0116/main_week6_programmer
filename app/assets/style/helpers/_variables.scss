@@ -270,6 +270,10 @@ $spacers: (  // 修改
   5: $spacer * 1.5, //24px
   6: $spacer * 2, //32px
   7: $spacer * 3, //48px
+
+  // 8: $spacer * 3, //48px
+  // 9: $spacer * 3, //48px
+  10: $spacer * 5.5, //88px
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -342,9 +346,9 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 360px, //540px,
+  sm: 540px,
   md: 720px, //pad
-  lg: 960px,
+  lg: 960px, 
   xl: 1140px,
   xxl: 1440px //1320px
 ) !default;
@@ -452,10 +456,9 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
-$line-height-lg:              2 !default;
-
+$line-height-base:            1.5 !default; //24px
+$line-height-sm:              1.25 !default; //20px
+$line-height-lg:              2 !default; //32px
 
 
 $h1-font-size:                $font-size-base * 3 !default;  //48px // $font-size-base * 2.5 !default;
