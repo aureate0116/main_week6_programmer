@@ -13359,6 +13359,14 @@ h1 img, .h1 img {
   width: 100%;
 }
 
+@media (max-width: 992px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    top: 93px;
+    left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar .navbar-collapse {
     position: absolute;
@@ -13786,6 +13794,12 @@ section {
   display: block;
 }
 
+@media (max-width: 768px) {
+  .articleBlock:hover .borderStyle3 {
+    display: none;
+  }
+}
+
 .shareBlock {
   background-image: url("../images/bg_share.jpg");
   background-size: cover;
@@ -13880,6 +13894,7 @@ section {
 @media (max-width: 992px) {
   .shareBlock .card {
     width: 100%;
+    padding: 24px 28px;
   }
 }
 
@@ -13936,6 +13951,12 @@ section {
   margin-top: 0;
 }
 
+@media (max-width: 1440px) {
+  .pagination {
+    left: 10%;
+  }
+}
+
 @media (max-width: 992px) {
   .pagination {
     position: initial;
@@ -13986,6 +14007,7 @@ section {
 
 .allClass ul {
   margin: 40px 0 48px 0;
+  overflow-x: auto;
 }
 
 @media (max-width: 576px) {
