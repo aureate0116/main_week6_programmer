@@ -12,6 +12,15 @@ h1 img{
 .navbar{
     padding:24px 0;
     height: 90px;
+    h1{
+        a{
+            width: 170px;
+            height: 42px;
+            display: block;
+            background-image: url(../images/logo.svg);
+            background-repeat: no-repeat;
+        }
+    }
     .nav-item a{
         line-height:26px;
         span{

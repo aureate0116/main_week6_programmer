@@ -17,6 +17,12 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
+/* 用來修改、自定義通用類別*/
+@import "../../../node_modules/bootstrap/scss/utilities";
+
+
+
+
 /*custom */
 //@import "./base/reset";  (TBC)
 @import './helpers/mixin';

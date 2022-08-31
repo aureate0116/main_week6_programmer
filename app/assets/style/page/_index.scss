@@ -3,22 +3,34 @@
     color:white;
     background-image: url("../images/bg_home.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     padding: 205px 0px;
-    @include mobile(){
-        background-image: url("../images/bg_home_mobile.jpg"); 
-        padding: 80px 7px;
-    }
+    
+    
 
     @include pad(){
         padding: 40px;
     }
+
+    @include mobile(){
+        background-image: url("../images/bg_home_mobile.jpg"); 
+        padding: 80px 7px;
+    }
+    
 }
 
 .title{
-    width: 44.4%;
+    //width: 44.4%;
     border: 1px solid #fff; 
     margin: 0 auto;
-    line-height: 48px; // line-height:70px;
+   // padding:45px 80px;
+    
+    h2{
+        font-size: 48px;
+        .lh{
+            line-height:70px;
+        }
+    }
 
     .square{
         width: 10px;
@@ -26,6 +38,7 @@
         background-color: #fff;  
         position: absolute;
     }
+
     .lt{transform: translate(-50%, -50%) !important;}
     .lb{transform: translate(-50%, 50%) !important;}
     .rt{transform: translate(50%, -50%) !important;}
@@ -37,14 +50,29 @@
         @include gradient-y;
     }
     
+    @media screen {
+        // width: 60%;
+        // max-width: 1200px;
+        h2{font-size: 40px;}
+    }
+
+    @include pad(){
+        width: 100%;
+        h2{
+            font-size: 35px;
+            .lh{
+                line-height: 50px;
+            }
+        }
+        
+    }
 
     @include mobile(){
         width: 100%;
-        div{
+        h2{
             font-size: 24px;
-            line-height: 35px;
-            &.mb-2{
-                margin: 0 !important;
+            .lh{
+                line-height: 35px;
             }
         }
         p{
@@ -179,6 +207,10 @@ section{
     // }
     .bg-gray-t2{
         border-radius: 24px;
+        border: 2px solid transparent;
+        &:hover{
+            border: 2px solid $primary;
+        }
         @include mobile(){
             margin-bottom: 16px;
         }
@@ -202,6 +234,7 @@ section{
    line-height: 26px;
 }
 
+//section 6
 
 .bg1, .bg2, .bg3, .bg4{
     padding: 215px 48px;
@@ -246,7 +279,7 @@ section{
 .bg4{background-image: url("../images/info04.jpg");}
 
 
-//section 6
+
 .overlay{
     background-color: $gray-t3;
     opacity: 90%;
@@ -315,6 +348,9 @@ section{
     .swiper-wrapper{
         width: 100%;
         height: 429px;
+        // @include pad(){
+        //     height: auto;
+        // }
         @include mobile(){
             height: auto;
         }
