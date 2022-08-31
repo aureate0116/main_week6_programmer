@@ -1,6 +1,7 @@
 .allClass{
     ul{
         margin:40px 0 48px 0;
+        overflow-x: auto;
         @include mobile(){
             margin-bottom: 24px;
         }

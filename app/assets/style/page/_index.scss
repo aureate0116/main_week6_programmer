@@ -342,6 +342,12 @@ section{
     .borderStyle3{
         display: block;
     }
+
+    @include pad(){
+        .borderStyle3{
+            display: none;
+        }
+    }
 }
 
 
@@ -431,6 +437,7 @@ section{
 
         @include lg(){
             width: 100%;
+            padding: 24px 28px;
             //margin-top: 350px;
           // top:500px;
         }
@@ -492,8 +499,11 @@ section{
         margin-top: 0;
     }
 
+    @include xxl(){  //1440px
+        left:10%;
+    }
+
     @include lg(){
-        
         position: initial;
         transform: none;
     }

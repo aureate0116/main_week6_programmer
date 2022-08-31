@@ -41,5 +41,17 @@
     }
 }
 
+// @mixin xl(){
+//     @media (max-width:1140px){
+//         @content;
+//     }
+// }
+
+@mixin xxl(){
+    @media (max-width:1440px){
+        @content;
+    }
+}
+
 
 

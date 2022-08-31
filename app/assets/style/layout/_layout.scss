@@ -47,6 +47,12 @@ h1 img{
         z-index: 10;
         width: 100%;
 
+        @include lg(){
+            position: absolute;
+            top:93px;
+            left:0;
+        }
+
         @include pad(){
             position: absolute;
             top:93px;
