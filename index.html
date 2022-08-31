@@ -15,7 +15,7 @@
     <!--navbar-dark 選單背景色為深色時，上面呈現的色系為淺色。包含漢堡的呈現-->
     <nav class="navbar navbar-expand-lg bg-gray-t2 navbar-dark">
       <div class="container">
-        <h1><a class="navbar-brand fontAzeret" href="#"><img src="./assets/images/logo.svg" alt="Coding Home Logo"></a></h1>
+        <h1><a class="navbar-brand fontAzeret" href="#"></a></h1>
 
         <!-- 選單-->
         <div>
@@ -47,11 +47,14 @@
     
 <div class="bg-gray-t3">
   <section class="container banner">
+    
+      <div class="title bg-gray-t3 fs-1 fw-bold py-xxl-7 py-md-7 px-xxl-7 position-relative text-center">
+        <h2 class="fw-bold pt-xxl-7 pt-md-7 pt-6 px-7">
+          <span class="gradient-font">全台最豐富的程式家教</span><br/> 
+          <span class="lh">在實踐中化理想為現實</span>
+        </h2>
 
-      <div class="title bg-gray-t3 fs-1 fw-bold py-xxl-7 py-md-7 position-relative text-center">
-        <div class="gradient-font mb-2">全台最豐富的程式家教</div>
-        <div class="mb-5">在實踐中化理想為現實</div>
-        <p class="fs-6">全台最專業師資｜到府程式家教｜客製化課程</p>
+        <p class="fs-6 mt-xxl-5 pb-6">全台最專業師資｜到府程式家教｜客製化課程</p>
         <!--position-absolute 改寫至scss square-->
         <div class="square lt top-0 start-0"></div> 
         <div class="square rt top-0 end-0"></div>
@@ -65,25 +68,33 @@
 <!--section 2-->
 <div class="bg-gray-t2">
   <section class="container">
-    <div class="row d-flex align-items-center justify-content-between">
-      <div class="col text-xxl-start text-md-center text-center">
+    <div class="row g-3 d-flex align-items-center justify-content-between">
+      <div class=" col-xxl-3 col-md-6 ">
+        <div class="text-xxl-start text-md-center text-center">
         <h2>手把手帶你<br/>親自到家教到會</h2>
         <div class="bottomLine mx-xxl-0 mx-md-auto mx-auto"></div>
+        </div>
       </div>
-      <div class="col-xxl-3 col-md-6 col-sm-1 text-center borderStyle1 py-7">
-        <span class="material-icons mb-5 fs-1 ">code</span>
+      <div class=" col-xxl-3 col-md-6">
+        <div class=" text-center borderStyle1 py-7">
+        <span class="material-icons mb-5 fs-1">code</span>
         <p class="mb-3 mt-1">超過 100 種專業課程</p>
         <p>學習標準化的電腦形式語言<br/>培養運算思維和邏輯素養</p>
+        </div>
       </div>
-      <div class="col-xxl-3 col-md-6 col-sm-1 ms-xxl-5 text-center borderStyle1 py-7">
+      <div class=" col-xxl-3 col-md-6 ">
+        <div class=" text-center borderStyle1 py-7">
         <span class="material-icons mb-5 fs-1">rocket_launch</span>
         <p class="mb-3 mt-1">高效學習</p>
         <p>客製化專屬課表<br/>讓學習變簡單</p>
       </div>
-      <div class="col-xxl-3 col-md-6 col-sm-1 ms-xxl-5 text-center borderStyle1 py-7">
+      </div>
+      <div class=" col-xxl-3 col-md-6 ">
+        <div class="  text-center borderStyle1 py-7">
         <span class="material-icons mb-5 fs-1">location_on</span>
         <p class="mb-3 mt-1">指定地點</p>
         <p>專業老師到你指定的地點<br/>一對一高效學習</p>
+        </div>
       </div>
     </div>
   </section>
@@ -99,7 +110,7 @@
 
       <div class="row">
         <div class="col-xxl-3 col-md-6 "> 
-          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-sm-5">
+          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">01</span>
           <h3 class="mb-3">預約</h3>
           <p>線上預約指定課程與老師<br/>由老師安排專屬課程</p>
@@ -107,7 +118,7 @@
         </div>
         
         <div class="col-xxl-3 col-md-6">
-          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-sm-5">
+          <div class="borderStyle2 position-relative p-7 mb-md-5 mb-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">02</span>
           <h3 class="mb-3">付款</h3>
           <p>支援各種支付方式<br/>提供12期分期付款</p>
@@ -115,7 +126,7 @@
         </div>
 
         <div class="col-xxl-3 col-md-6 ">
-          <div class="borderStyle2 position-relative p-7 mb-md-5  mb-sm-5">
+          <div class="borderStyle2 position-relative p-7 mb-md-5  mb-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">03</span>
           <h3 class="mb-3">上課</h3>
           <p>地點由您指定<br/>密集性一對一教學</p>
@@ -123,7 +134,7 @@
         </div>
 
         <div class="col-xxl-3 col-md-6 ">
-          <div class="borderStyle2 position-relative p-7  mb-md-5  mb-sm-5">
+          <div class="borderStyle2 position-relative p-7  mb-md-5  mb-5">
           <span class="stepNo px-2 bg-gray-t3 fontAzeret fs-1 text-primary fw-bold ">04</span>
           <h3 class="mb-3">提供滿意度</h3>
           <p>提供課程滿意度及回饋<br/>讓我們持續成長與進步</p>
@@ -250,15 +261,15 @@
     <div class="row hotCourse mb-7">
       <!--block 1-->
       <div class="col-xxl-3 col-md-6 ">
-        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
+        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-5">
           <div class="text-center">
             <img src="./assets/images/teacher01.jpg" alt="Belinda">
             <p class="fs-7">Belinda</p>
           </div>
           
           <div class="px-5">
-          <h4 class="mb-xxl-1 pb-xxl-6">基礎前端 - HTML</h4>
-          <h5 class="text-primary mt-xxl-1">前端語言</h5>
+          <h4 class="mb-xxl-1 pb-xxl-6 mb-1 pb-xxl-6 pb-md-6">基礎前端 - HTML</h4>
+          <h5 class="text-primary mt-xxl-1 mt-1">前端語言</h5>
           <p class="mb-6 fs-7">帶領無基礎的平民老百姓，從最基礎的 HTML 語法出發，使用最淺顯易懂的語言與生活隨處可見的例子...</p>
           </div>
 
@@ -271,15 +282,15 @@
 
       <!--block 2-->
       <div class="col-xxl-3 col-md-6">
-        <div class=" bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
+        <div class=" bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-5">
         <div class="text-center">
           <img src="./assets/images/teacher02.jpg" alt="Guava">
           <p class="fs-7">Guava</p>
         </div>
         
         <div class="px-5">
-        <h4>2022 Python 全攻略｜從入門到實務</h4>
-        <h5 class="text-primary mt-1">後端語言</h5>
+        <h4 class="pb-xxl-0 pb-md-6">2022 Python 全攻略｜從入門到實務</h4>
+        <h5 class="text-primary mt-1 ">後端語言</h5>
         <p class="mb-6 fs-7">Python支援多種程式設計範式，包括函數式、指令式、反射式、結構化和物件導向程式設計，它擁有動態...</p>
         </div>
 
@@ -292,14 +303,14 @@
 
       <!--block 3-->
       <div class="col-xxl-3 col-md-6 ">
-        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-sm-5">
+        <div class="bg-gray-t2 pt-5 pb-3 px-0 mb-md-5 mb-5">
         <div class="text-center">
           <img src="./assets/images/teacher03.jpg" alt="Joe">
           <p class="fs-7">Joe</p>
         </div>
         
         <div class="px-5">
-        <h4>活用 Line Bot ｜APP 開發到上架完整實戰攻略</h4>
+        <h4 class="pb-xxl-0 pb-md-6">活用 Line Bot ｜APP 開發到上架完整實戰攻略</h4>
         <h5 class="text-primary mt-1">行動應用開發</h5>
         <p class="mb-6 fs-7">Line Bot 可用於實用的目的，如客戶服務或資訊獲取，有些聊天機器人會搭載自然語言處理系統，但大多簡...</p>
         </div>
@@ -313,14 +324,14 @@
 
       <!--block 4-->
       <div class="col-xxl-3 col-md-6 ">
-        <div class=" bg-gray-t2 pt-5 pb-3 mb-md-5 mb-sm-5">
+        <div class=" bg-gray-t2 pt-5 pb-3 mb-md-5 mb-5">
         <div class="text-center">
           <img src="./assets/images/teacher04.jpg" alt="Lina">
           <p class="fs-7">Lina</p>
         </div>
         
         <div class="px-5">
-        <h4>Linux 零基礎七天入門｜入門到實務</h4>
+        <h4 class="pb-xxl-0 pb-md-6">Linux 零基礎七天入門｜入門到實務</h4>
         <h5 class="text-primary mt-1">作業系統與伺服器</h5>
         <p class="mb-6 fs-7">Linux是一種自由和開放原始碼的類UNIX作業系統，作業系統中包含了許多使用者圖形介面和其他實用...</p>
         </div>
@@ -333,11 +344,11 @@
       </div>
     </div>
 
-    <div class="row">
+    
       <div class="text-center">
       <a role="button" class="btn fs-6 gradient-x-btn buttonStyle link-white py-2" href="#">所有課程列表</a>
       </div>
-    </div>
+    
   </section>
 </div>
 
