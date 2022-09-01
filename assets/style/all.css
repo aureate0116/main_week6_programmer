@@ -14071,6 +14071,15 @@ section {
   line-height: 35px;
 }
 
+ul.list-group.d-flex.flex-row::-webkit-scrollbar {
+  display: none;
+}
+
+ul.list-group.d-flex.flex-row {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .gradient-x-btn-left {
   background-image: -webkit-gradient(linear, right top, left top, from(#62DB54), to(#09ACF5));
   background-image: -o-linear-gradient(right, #62DB54, #09ACF5);
