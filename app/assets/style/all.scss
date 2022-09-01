@@ -1,6 +1,5 @@
-/*boostrap css*/
+/*boostrap css mixin 跟 function */
 @import "../../../node_modules/bootstrap/scss/functions";
-
 
 /*google fonts & icon*/
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -9,27 +8,23 @@
 //swiper
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
 
+/*bootstrap 自定義的變數*/
+@import "./helpers/variables";  
+// 由於 !default 特性是寫在前面的優先全較高，因此要「複製」原本 BS 的variables 放在前面來改。
 
-/*boostrap 自定義的變數*/
-@import "./helpers/variables";
-
-/*boostrap css*/
+// boostrap 所有 CSS @import, 包含function, variables, mixin(彙整import 所有mixin檔案), utilities , layout & components , helper...等 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
 
-/* 用來修改、自定義通用類別*/
-@import "../../../node_modules/bootstrap/scss/utilities";
-
-
-
+// 用來修改、自定義通用類別 (如果有自定義的 utilities 可以另外寫
+//@import "../../../node_modules/bootstrap/scss/utilities";
 
 /*custom */
-//@import "./base/reset";  (TBC)
+//@import "./base/reset";  
 @import './helpers/mixin';
 @import "./base/base";
 
 @import './layout/layout.scss';
-
 
 @import './page/index.scss';
 @import './page/class.scss';
