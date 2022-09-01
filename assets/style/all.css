@@ -1,11 +1,10 @@
 @charset "UTF-8";
-/*boostrap css*/
+/*boostrap css mixin 跟 function */
 /*google fonts & icon*/
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&family=Lato:wght@400;700&family=Noto+Sans+TC:wght@100;400;500;700;900&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css");
-/*boostrap 自定義的變數*/
-/*boostrap css*/
+/*bootstrap 自定義的變數*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -13244,7 +13243,6 @@ fieldset:disabled .btn {
   }
 }
 
-/* 用來修改、自定義通用類別*/
 /*custom */
 /*放全站html標籤css設定*/
 *,
@@ -14037,6 +14035,7 @@ section {
 .allClass img {
   width: 100px;
   border-radius: 50%;
+  max-width: none;
 }
 
 .allClass .card {
