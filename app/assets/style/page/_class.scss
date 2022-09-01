@@ -60,6 +60,20 @@
     }
 }
 
+//如果想要隱藏捲軸可以以下設置樣式
+ul.list-group.d-flex.flex-row::-webkit-scrollbar {
+	// 針對 chrome 來隱藏滾動軸
+  display: none;
+	
+}
+
+ul.list-group.d-flex.flex-row {
+  // IE 10+
+	-ms-overflow-style: none;
+	// Firefox
+  scrollbar-width: none;
+}
+
 
 .gradient-x-btn-left{
     @include gradient-x-left;
